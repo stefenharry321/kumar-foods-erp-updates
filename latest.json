@@ -1,6 +1,6 @@
 {
-  "version": "1.0.6",
-  "title": "KUMAR FOODS ERP 1.0.6",
-  "notes": "New major updates, supplier reset fix, receipt/payment ledger synchronization fixes, Financial Year improvements, Wheat Purchase layout updates and other ERP improvements.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v1.0.6/KUMAR-FOODS-ERP-Setup-v1.0.6.exe"
+  "version": "1.0.7",
+  "title": "KUMAR FOODS ERP 1.0.7",
+  "notes": "Bug fixes, performance improvements and new features.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v1.0.7/Kumar_Foods_ERP_Setup.exe"
 }
