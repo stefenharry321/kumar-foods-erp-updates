@@ -1,6 +1,6 @@
 {
-  "version": "1.0.14",
-  "title": "KUMAR FOODS ERP 1.0.14",
-  "notes": "Latest ERP update with improvements and bug fixes.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/V1.0.14/Kumar_Foods_ERP_Setup_1.0.14.exe"
+  "version": "1.0.15",
+  "title": "KUMAR FOODS ERP 1.0.15",
+  "notes": "Employee attendance and salary improvements, premium reports, register UI fixes, Given Money enhancements, optional Supabase mirror, and updater reliability fixes.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/V1.0.15/Kumar_Foods_ERP_Setup_1.0.15.exe"
 }
