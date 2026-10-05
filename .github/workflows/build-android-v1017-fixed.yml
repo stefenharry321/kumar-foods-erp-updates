@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -35,10 +37,11 @@ jobs:
 
       - name: Recover embedded Kumar Foods source
         run: |
+          git show f15d4dce4271630f4f3894b952f080e1521c48af^:.github/workflows/build-android-v1017.yml > /tmp/old_android_workflow.yml
           python3 - <<'PY'
           from pathlib import Path
           import base64, re, tarfile
-          src = Path('.github/workflows/build-android-v1017.yml').read_text()
+          src = Path('/tmp/old_android_workflow.yml').read_text()
           m = re.search(r"<<'PAYLOAD'\n(.*?)\nPAYLOAD", src, re.S)
           if not m:
               raise SystemExit('Embedded source payload not found')
