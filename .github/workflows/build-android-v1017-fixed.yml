@@ -1,0 +1,92 @@
+name: Build Android v1.0.17 Fixed
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-android-v1017-fixed.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Create Android project
+        run: |
+          rm -rf android_build
+          flutter create --platforms=android --org com.kumarfoods --project-name kumar_foods_erp_mobile android_build
+
+      - name: Recover embedded Kumar Foods source
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, re, tarfile
+          src = Path('.github/workflows/build-android-v1017.yml').read_text()
+          m = re.search(r"<<'PAYLOAD'\n(.*?)\nPAYLOAD", src, re.S)
+          if not m:
+              raise SystemExit('Embedded source payload not found')
+          data = base64.b64decode(''.join(m.group(1).split()))
+          Path('/tmp/kf_src.tar.gz').write_bytes(data)
+          with tarfile.open('/tmp/kf_src.tar.gz', 'r:gz') as t:
+              t.extractall('android_build')
+          PY
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('android_build/android/app/src/main/AndroidManifest.xml')
+          s=p.read_text()
+          if 'android.permission.INTERNET' not in s:
+              s=s.replace('<manifest xmlns:android="http://schemas.android.com/apk/res/android">', '<manifest xmlns:android="http://schemas.android.com/apk/res/android">\n    <uses-permission android:name="android.permission.INTERNET"/>')
+          if 'android:usesCleartextTraffic=' not in s:
+              s=s.replace('<application', '<application\n        android:usesCleartextTraffic="true"', 1)
+          s=s.replace('android:label="kumar_foods_erp_mobile"','android:label="Kumar Foods ERP"')
+          p.write_text(s)
+          PY
+
+      - name: Dependencies
+        working-directory: android_build
+        run: flutter pub get
+
+      - name: Analyze
+        working-directory: android_build
+        run: flutter analyze --no-fatal-infos
+
+      - name: Build release APK
+        working-directory: android_build
+        run: flutter build apk --release
+
+      - name: Prepare APK
+        run: cp android_build/build/app/outputs/flutter-apk/app-release.apk Kumar_Foods_ERP_Android.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kumar_Foods_ERP_Android_v1.0.17
+          path: Kumar_Foods_ERP_Android.apk
+
+      - name: Publish Android release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: android-v1.0.17
+          name: Kumar Foods ERP Android v1.0.17
+          body: |
+            Kumar Foods ERP Android v1.0.17
+            Live Windows ERP cloud mirror, ledgers, sales, purchases, receipts, payments, cash/bank, stock, expenses, employees, reports and PDF/share.
+          files: Kumar_Foods_ERP_Android.apk
+          make_latest: true
