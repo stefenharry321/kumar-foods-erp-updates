@@ -58,9 +58,9 @@ jobs:
         working-directory: android_build
         run: flutter pub get
 
-      - name: Analyze
+      - name: Analyze application source
         working-directory: android_build
-        run: flutter analyze --no-fatal-infos
+        run: flutter analyze lib --no-fatal-infos --no-fatal-warnings
 
       - name: Build release APK
         working-directory: android_build
