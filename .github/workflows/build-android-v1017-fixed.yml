@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
@@ -42,7 +42,7 @@ jobs:
         run: |
           cat android_v1_0_17/payload/part_*.b64 > /tmp/kf_src.b64
           base64 -d /tmp/kf_src.b64 > /tmp/kf_src.tar.gz
-          echo "341b16151c07beae39a8ac072a403a5b1aba955a04809defeef2630c0b384688  /tmp/kf_src.tar.gz" | sha256sum -c -
+          echo "c7c8b43c744fca635997b12c2b1bb69841531d24c7156083d9ddd947d1d75252  /tmp/kf_src.tar.gz" | sha256sum -c -
           tar -xzf /tmp/kf_src.tar.gz -C android_build
           cd android_build
           python3 prepare_android.py
