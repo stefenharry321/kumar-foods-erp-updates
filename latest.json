@@ -1,6 +1,6 @@
 {
-  "version": "1.0.16",
-  "title": "KUMAR FOODS ERP 1.0.16",
-  "notes": "Register date filters, employee attendance improvements, compact production packing, customer selector improvements, total sales quantity report, and v1.0.16 fixes.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v1.0.16/Kumar_Foods_ERP_Setup_1.0.16.exe"
+  "version": "1.0.17",
+  "title": "KUMAR FOODS ERP 1.0.17",
+  "notes": "Runtime receipt/date/PDF fixes retained; WhatsApp PDF backend defaults retained; Android live-cloud mirror auto-pairs and syncs about every 15 seconds; Android download button added.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/V1.0.17/Kumar_Foods_ERP_Setup_1.0.17.exe"
 }
