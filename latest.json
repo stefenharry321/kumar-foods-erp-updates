@@ -1,6 +1,6 @@
 {
-  "version": "2.4",
-  "title": "KUMAR FOODS ERP 2.4 - Supplier & Attendance Fix",
-  "notes": "Supplier Register text formatting corrected; one-click Employee Attendance status selection (Present, Absent, Half Day, Leave); reports and existing v2.4 features retained.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.4/KUMAR_FOODS_ERP_Update_2.4.exe"
+  "version": "2.5",
+  "title": "KUMAR FOODS ERP 2.5",
+  "notes": "Kumar Foods ERP version 2.5 update.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.5/Kumar_Foods_ERP_Setup_v2.5.exe"
 }
