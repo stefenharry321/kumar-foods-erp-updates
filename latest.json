@@ -1,6 +1,7 @@
+
 {
-  "version": "2.6",
-  "title": "KUMAR FOODS ERP 2.6",
-  "notes": "Version 2.6 update: Website Orders & Enquiries, Sales Register Invoice Print, Stock & Payment Validation, and Improved Settings.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.6/mysetup.exe"
+  "version": "2.7",
+  "title": "KUMAR FOODS ERP 2.7",
+  "notes": "Version 2.7: WhatsApp Cloud API PDF Sending Fix, Office PC WhatsApp API Fix, Original Invoice Cloud Sync and Performance Improvements.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.7/Kumar_Foods_ERP_Setup_v2.7.exe"
 }
