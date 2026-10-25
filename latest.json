@@ -1,7 +1,6 @@
-
 {
   "version": "2.8",
   "title": "KUMAR FOODS ERP 2.8",
   "notes": "Live Production to Standard Sale stock refresh, exact packet-size stock validation, custom KG bag support, attendance fixes, and private ERP API key.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/2.8/Kumar_Foods_ERP_Setup_v2.8.exe"
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.8/Kumar_Foods_ERP_Setup_v2.8.exe"
 }
