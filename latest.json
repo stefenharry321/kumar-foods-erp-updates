@@ -1,6 +1,6 @@
 {
-  "version": "2.9",
-  "title": "KUMAR FOODS ERP 2.9",
-  "notes": "Customer selection red-screen fix and Data Health & Repair with backup-first safe repairs; Production stock and other previous ERP improvements.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v2.9/Kumar_Foods_ERP_Setup_v2.9.exe"
+  "version": "3.0",
+  "title": "KUMAR FOODS ERP 3.0",
+  "notes": "Stock validation, production costing, 50 multicolour themes, PDF controls and matching-report improvements.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.0/KumarFoodsERP_Setup_3.0.exe"
 }
