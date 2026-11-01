@@ -1,6 +1,6 @@
 {
-  "version": "3.0",
-  "title": "KUMAR FOODS ERP 3.0",
-  "notes": "Stock validation, production costing, 50 multicolour themes, PDF controls and matching-report improvements.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.0/KumarFoodsERP_Setup_3.0.exe"
+  "version": "3.1",
+  "title": "KUMAR FOODS ERP 3.1",
+  "notes": "Readable full ERP reports, faster background PDF export, compact Production Register, centered company headings, four-colour stock reports, custom entry numbering and Quick Sale removed.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.1/KumarFoodsERP_Setup_3.1.exe"
 }
