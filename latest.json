@@ -1,7 +1,7 @@
 
 {
   "version": "3.2",
-  "download_url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.2/KumarFoodsERP_Setup_3.2.exe",
-  "changelog": "KUMAR FOODS ERP 3.2 - Production Register overflow fix, table layout compile fix, original Supplier card design retained, and UI improvements.",
-  "mandatory": false
+  "title": "KUMAR FOODS ERP 3.2",
+  "notes": "Production Register overflow fix, compilation fixes and UI improvements.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.2/KumarFoodsERP_Setup_3.2.exe"
 }
