@@ -1,7 +1,7 @@
 
 {
-  "version": "3.2",
-  "title": "KUMAR FOODS ERP 3.2",
-  "notes": "Production Register overflow fix, compilation fixes and UI improvements.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.2/KumarFoodsERP_Setup_3.2.exe"
+  "version": "3.4",
+  "title": "KUMAR FOODS ERP 3.4",
+  "notes": "New ERP update with Hindi and English language options, Hindi Names, Hindi Invoice, inventory error fixes, improved stock validation, faster performance and bug fixes.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.4/KumarFoodsERP_Setup_3.4.exe"
 }
