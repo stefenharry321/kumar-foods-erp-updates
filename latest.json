@@ -1,7 +1,7 @@
 
 {
-  "version": "3.4",
-  "title": "KUMAR FOODS ERP 3.4",
-  "notes": "New ERP update with Hindi and English language options, Hindi Names, Hindi Invoice, inventory error fixes, improved stock validation, faster performance and bug fixes.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.4/KumarFoodsERP_Setup_3.4.exe"
+  "version": "3.5",
+  "title": "KUMAR FOODS ERP 3.5",
+  "notes": "ERP 3.5 Fresh Start Release. Includes Production, Atta, Chokar and Wastage reports, Standard Sale stock fixes, Hindi and English options, data reset improvements, performance optimizations and Fund Repayment Register fixes.",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5/KumarFoodsERP_Setup_3.5.exe"
 }
