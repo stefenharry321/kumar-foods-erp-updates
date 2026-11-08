@@ -1,6 +1,6 @@
 {
   "version": "3.5.2",
-  "title": "KUMAR FOODS ERP 3.5.2",
-  "notes": "Standard Sale edit stock preview fix; Enter-key navigation (Pack Size > Bags > Rate > Add Item), Ctrl+Enter to save/update; larger bold bag counts and multicolour Atta/Chokar live pack stock chips; sale sync and custom pack improvements.",
+  "title": "KUMAR FOODS ERP 3.5.2 - Version Fix",
+  "notes": "Version display and diagnostics fix. Shows build ID 3.5.2-VFIX-20261108 and installed EXE path in Software Status. Keeps existing ERP data unchanged.",
   "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5.2/KumarFoodsERP_Setup_3.5.2.exe"
 }
