@@ -1,6 +1,6 @@
 {
-  "version": "3.5.3",
-  "title": "KUMAR FOODS ERP 3.5.3",
-  "notes": "Windows startup diagnostics and recovery screen, version 3.5.3 display, improved office PC installation and complete Flutter runtime packaging. Existing business database and backups remain unchanged.",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5.3/KumarFoodsERP_Setup_3.5.3.exe"
+  "version": "3.5.6",
+  "title": "KUMAR FOODS ERP 3.5.6",
+  "notes": "Wheat Stock और Production में अब कुल इस्तेमाल हुआ गेहूँ और बचा हुआ गेहूँ किलो में दिखाई देगा।",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5.6/KumarFoodsERP_Setup_3.5.6.exe"
 }
