@@ -1,6 +1,6 @@
 {
-  "version": "3.5.6",
-  "title": "KUMAR FOODS ERP 3.5.6",
-  "notes": "Wheat Stock और Production में अब कुल इस्तेमाल हुआ गेहूँ और बचा हुआ गेहूँ किलो में दिखाई देगा।",
-  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5.6/KumarFoodsERP_Setup_3.5.6.exe"
+  "version": "3.5.7",
+  "title": "KUMAR FOODS ERP 3.5.7",
+  "notes": "Standard Sale और Sales Register से खोले गए इनवॉइस में अब प्रति किलो दर्ज रेट एक जैसा दिखता है। Settings में ERP Diagnostics से इनवॉइस रेट, GST गणना और SQLite डेटाबेस की जाँच कर सकते हैं।",
+  "url": "https://github.com/stefenharry321/kumar-foods-erp-updates/releases/download/v3.5.7/KumarFoodsERP_Setup_3.5.7.exe"
 }
